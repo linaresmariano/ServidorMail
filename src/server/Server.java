@@ -10,6 +10,15 @@ public class Server {
 
 	// Diccionario con el identificador unico de cada usuario y su User correspondiente
 	private Hashtable<String, User> users = new Hashtable<String, User>();
+	
+	// Dominio del server
+	private String dominio;
+	
+	
+	// Constructor de un servidor
+	public Server(String dominio) {
+		this.dominio = dominio;
+	}
 
 
 	/**
@@ -133,9 +142,12 @@ public class Server {
 		return users;
 	}
 
-
 	public void setUsers(Hashtable<String, User> users) {
 		this.users = users;
+	}
+	
+	public String getDominio() {
+		return this.dominio;
 	}
 
 }

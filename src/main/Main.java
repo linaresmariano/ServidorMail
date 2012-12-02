@@ -5,7 +5,7 @@ import server.*;
 
 public class Main {
 	
-	public static Server server = new Server(); 
+	public static Server server = new Server("yahoo"); 
 	
 	public static void registrar(String nombre, String pass) {
 		try {
