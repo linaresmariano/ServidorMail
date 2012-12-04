@@ -133,6 +133,10 @@ public class Server {
 		this.getUsers().get(user).removeMail(indexMail);
 	}
 	
+	public void setEtiqueta(String user, int indexMail, List<String> etiqueta) {
+		this.getUsers().get(user).setEtiquetaMail(indexMail, etiqueta);
+	}
+	
 	public Set<String> getUsernames() {
 		return this.users.keySet();
 	}

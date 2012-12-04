@@ -18,6 +18,10 @@ public class User {
 		this.pass = pass;
 	}
 	
+	public void setEtiquetaMail(int indexMail, List<String> etiqueta) {
+		this.getMails().get(indexMail).setEtiqueta(etiqueta);
+	}
+	
 	public String getCuerpoMail(int indexMail) {
 		return this.getMails().get(indexMail).getCuerpo();
 	}
